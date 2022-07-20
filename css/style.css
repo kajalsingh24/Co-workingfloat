@@ -1,0 +1,664 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family:'Roboto',sans-serif;
+    box-sizing: border-box;
+}
+/* ==============================commonpaddin============================================= */
+.commonpadding
+    {
+        padding:40px 0;
+    } 
+.container 
+{
+    width: 1200px;
+  margin: auto;
+}
+ ul
+  {
+  list-style-type: none;
+}
+a
+{
+    text-decoration: none;
+}
+.commonheading
+    {
+        font-size: 40px;
+    }
+.clearfix {
+        clear: both;
+          }
+
+/* ==============================header============================================= */
+    
+    header
+    {
+     width:100%;
+        background-color: black;
+    }
+    .logo ul
+    {
+        float:left;
+        font-size: 20px;
+    }
+
+    
+
+    .social-media ul
+    {
+        float:right;
+        font-size: 20px;
+    }
+
+
+    .logo li , .social-media li{
+        display: inline-block;
+        font-size: 20px;
+      
+        padding: 20px; 
+    }
+
+    .logo a , .social-media a{
+        color:white;
+    }
+    .logo  li a::after{
+        content:"";
+        width: 0;
+        height: 3px;
+        background-color:lightgreen;
+        margin: auto;
+        display: block;
+        
+        }
+    .logo li a:hover::after
+{
+   width: 100%;
+   transition: 0.3s linear;
+}
+.logo a:hover
+{
+   color:lightgreen;
+}
+.social-media a:hover
+{
+    color:lightgreen;
+}
+    
+    /* -------------------------------------------------------- */
+    .bannerimage
+   {
+       position: relative;
+   }
+   .bannerimage img
+   {
+height: 100vh;
+   }
+   #slider11 .owl-dots
+   {
+         transform: translate(-50%,-90%);
+         top:90%;
+         left: 50%;
+         position: absolute;
+         /* z-index: 1; */
+         
+   }
+    .content
+    {
+        position:absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        letter-spacing:2px;
+        position: absolute;
+    }
+    .heading1
+    {
+        font-size:20px;
+    }
+    .heading2
+    {
+        color:lightgreen;
+        font-size: 20px;
+        letter-spacing: 2px;
+    
+    }
+    .content 
+    {
+        color: white;
+    }
+    
+    .content p
+    {
+        color: white;
+        line-height:30px;
+    }
+    .content a
+    {
+        background-color: lightgreen;
+        border: none;
+        padding: 15px;
+        margin-top: 16px;
+        border-radius: 10px;
+        text-decoration: none;
+        text-align: center;
+        display: inline-block;
+        color: white;
+    }
+    .content a:hover
+    {
+        background-color:purple;
+    } 
+    /* ----------------------------------------------start benifits------------------------------------------ */
+    .container
+    {
+        width:1200px;
+        margin: auto;
+       
+    }
+   
+    .subpart1
+    {
+        width: 50%;
+        float: left;
+    }
+
+    .subpart2  
+    {
+    width:50%;
+    float:right;
+    }
+    .subpart2 p{
+        font-size:20px;
+        text-align:justify;
+        color: black;
+        line-height:30px;
+    }
+
+    /* -----------------------------------------------end benifits-------------------------------------------- */
+    /* ----------------------------------------------start iconpart------------------------------------------- */
+    .secondpart
+    {
+        /* display: flex; */
+        width:100%;
+        /* flex-wrap: wrap; */
+        margin-top: 60px;
+        text-align: center;
+        padding: 0 30px; 
+        padding:0 15px;
+    
+        /* padding: 60px; */
+    }
+    .block1
+    {
+        width: 23%;
+        margin-bottom:60px;
+        float: left;
+    }
+    .block1 li{
+        list-style: none;
+    }
+    .block1 aside
+    {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .secondpart i
+    {
+    color:lightgreen;
+    font-size:30px;
+    margin-bottom:15px;
+
+
+    }
+    .secondpart h3
+    {
+    text-align: center;
+    margin-bottom:15px;
+    }
+    .secondpart p{
+        text-align: center;
+        line-height:20px;
+        padding: 20px;
+    }    
+    /* -----------------------------------------------end iconpart-------------------------------------------- */
+   /* ------------------------------------------------start creativepart-------------------------------------- */
+   .thirdpart
+    {
+     width: 100%;
+    }
+    .block3
+    {
+        width: 50%;
+        padding: 120px 0px;
+        float: left;
+    }
+    .block3 h2{
+        font-size: 60px; 
+    }
+    .block3 p{
+        line-height:30px;
+        margin-top: 20px;
+    } 
+    .block4
+    {
+        display: flex;
+        width: 50%;
+        float: right;
+    }
+   /* ------------------------------------------------end creativepart---------------------------------------- */
+   .fourtpart
+   {
+       width: 100%;
+       
+
+   }
+   .block5
+   {
+       width: 30%;
+       float: left;
+    margin: 18px;
+    position: relative;
+       /* padding:0 10px; */
+       /* margin-left:19px; */
+   }
+   .block5 img{
+      
+       width:100%;
+    display: block;
+   }
+   .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: lightgreen;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+} 
+.block5:hover .overlay
+    {
+        bottom: 0;
+        height: 100%;    
+}
+.text { 
+    color:white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+   .fifthpar
+   {
+       width: 100%;
+       /* padding: 20px 0px; */
+       
+   }
+   .block6
+   {
+       width: 63.3%;
+       float: left;
+       margin: 17px;
+       position: relative;
+       /* padding:0  10px; */
+   }
+   .block7 img{
+       width: 100%;
+       display: block;
+
+   }
+   .block7
+   {
+    /* padding: 0px 3px; */
+       width: 30%;
+       margin: 17px;
+       float: left;
+       position:relative;
+       /* padding:0 10px; */
+   }
+   .block6 img
+   {
+       width: 100%;
+       display: block;
+   }
+   .block6:hover .overlay
+    {
+        bottom: 0;
+        height: 100%;    
+}
+.block7:hover .overlay
+    {
+        bottom: 0;
+        height: 100%;    
+}
+   /* -----------------------------------------------------------example-------------------------------- */
+   .sevenpart 
+   {
+       /* display: flex; */
+       width:100%;
+       
+       /* justify-content:space-evenly; */
+   }
+   .block12
+   {
+       width:23%;
+       /* position: relative; */
+       /* float: left; */
+       margin: 10px;
+   }
+   .block12 img{
+   width:100%;
+   display: block;
+   }
+   
+   .block12:hover .overlay
+   {
+       bottom: 0;
+       height: 100%;
+       
+   }
+   /* -----------------------------------------start slider2---------------------------- */
+   .description
+   {
+       /* justify-content: center; */
+       text-align: center;
+       margin-bottom:30px;
+       /* margin-top:80px;  */
+   }
+ 
+   #slider22   
+   {
+position: relative;
+   }
+   #slider22 .owl-prev 
+   {
+    position: absolute;
+    z-index: 1;
+    top:50%;
+    left: 0%;
+    transform: translate(0,-50%);
+   }
+   #slider22 .owl-next
+   {
+       display: none;
+   }
+   #slider22 .owl-prev span{
+       font-size: 80px;
+       color:lightgreen;
+   }
+   /* -----------------------------------------end slider2----------------------------------------- */
+   /* -----------------------------------------start slider3---------------------------------------- */
+   .block16
+   {
+       text-align: center; 
+       justify-content: center;
+       width:100%;
+       display:inline-block;
+       margin: auto;
+       /* width: 600px; */
+       /* width: 900px; */
+   }
+   .block16 asied{
+       font-size:50px;
+       color:aqua;
+   }
+   .block16 p{
+       width:50%; 
+       text-align: center;
+       font-size:20px; 
+       margin:auto;
+       /* line-height:20px; */
+       /* letter-spacing: 2px; */
+       /* justify-content: center; */
+       /* text-align: center; */
+       /* padding: 20px; */
+   }
+   .block16 p{
+       margin-top:20px;
+   }
+   .block16 dd{
+       color: lightgreen;
+       margin-top: 10px;
+   }
+   .heading3 
+  {
+      color:lightgreen;
+      padding-top: 40px;
+      
+  }
+   .dep{
+       text-align: center;
+   }
+   .dep h3{
+       color:lightgreen;
+       text-align: center;
+       justify-content: center;
+       /* margin-top:20px; */
+       /* margin-bottom: 20rem; */
+   }
+
+   /* -----------------------------------------end slider3---------------------------------------- */
+ .subpart3
+ {
+     width:49%;
+     float: left;
+
+ }
+ .subpart4
+ {
+     width:49%;
+     line-height:40px;
+     padding: 50px 25px;
+     float:right;
+     
+ }
+ .subpart4 i{
+     color:lightgreen;
+     
+ }
+ .subpart4 li{
+     list-style: none;
+ }
+ 
+ .subpart4 a
+ {
+     background-color:lightgreen;
+     /* border-radius: 3%; */
+     border: none;
+     /* padding:9px; */
+     padding: 5px 30px;
+     margin-top: 10px;
+     border-radius: 10px;
+     text-decoration: none;
+     text-align: center;
+     display: inline-block;
+     color: white;
+     
+
+ }
+ .workshope i{
+     color:white;
+     
+ }
+  .subpart4 a:hover
+  {
+      background-color: blueviolet;
+  }
+
+/* j */
+.description4
+{
+    text-align: center;
+    padding: 30px;
+}
+.tenpart
+{
+    width: 100%;
+    /* float: left; */
+    /* justify-content: space-between; */
+}
+.block17
+{
+width:25%;
+/* position: relative; */
+float: left;
+padding: 10px;
+}
+.block17 img{
+    width:100%;
+    display: block;
+}
+
+.block17:hover .overlay
+    {
+        bottom: 0;
+        height: 100%;
+    
+}
+
+/* ----------------------------------------------------------footer start--------------------------------- */
+footer{
+    width: 100%;
+     background-color: navy; 
+    /* padding:50px; */
+}
+.footerpart
+{
+     /* display: flex; */
+     /* justify-content: space-between; */
+     
+     /* text-align: center; */
+}
+
+.part1{
+    width:30%;
+    color: white;
+    margin-right: 30px;
+    float: left;
+    /* padding-bottom: 30px; */
+    /* background-color: aqua; */
+}
+.part1 p{
+    margin-top:25px;
+    
+}
+.part1 a
+{
+/* background-color: yellow; */
+font-size:25px;
+margin-top:10px;
+letter-spacing: 10px;
+text-decoration: none;
+color: lightgreen;
+}
+ .part1 a:hover
+ {
+     color: purple;
+ }
+.part1 form
+{
+   margin-top: 10px;
+   position: relative;
+   margin-bottom: 20px;
+
+}
+form input
+{
+   padding: 10px 25px;
+   width: 96;
+   border: 1px solid white;
+   background-color: transparent;
+   padding-right: 15px;
+}
+form button
+{
+    position:absolute;
+    border: none;
+    color: white;
+    background-color: transparent;
+    top: 0;
+    bottom:0;
+    left:120px;
+}
+.part1 button
+{
+    padding:8px;
+    /* background-color: transparent; */
+    border-left-style: none;
+}
+
+.part2
+{
+    width:30%;
+    color: white;
+    margin-right: 30px;
+    float: left;
+    /* background-color: purple; */
+}
+.part2 p{
+    margin-top:18px;
+}
+.part2 a{
+  
+    color: white;
+    text-decoration: none;  
+    margin-right: 10px;
+
+}
+.part2 address
+{
+    /* padding-bottom: 50px; */
+    margin-left:2px;
+    margin-top:43px; 
+    /* margin-top:-0px; */
+    color: white;
+    text-decoration: none;
+}
+.part2 a:hover
+{
+    color: purple;
+}
+
+.part3{
+    width:30%;
+    color: white;
+    margin: auto;
+   float:left;
+    /* margin-right:50px; */
+  
+}
+.part3 a {
+    color: white;
+    text-decoration: none;
+}
+
+.part3 li{
+    line-height:0.5px;
+    margin-top:30px;
+    list-style: none;
+    /* text-decoration:none; */
+}
+ .part3 li ::before
+{
+    content:'-';
+}
+.social-icon 
+{
+margin-top:28px;
+}
+.social-icon a{
+   line-height:10px;
+   margin: 10px;
+}
+.social-icon i:hover
+{
+   color: purple;
+}
+/* ---------------------------------------------------------footer end-------------------------------------- */
